@@ -1,0 +1,40 @@
+<table border=0 cellpadding=0 cellspacing=0>
+              <tr> 
+                <td> <img src="/images/lmleft.gif" width=18 height=29></td>
+                <td> <a href="/index.htm"
+			   onMouseOver="changeImages('lmt', 'images/lmt-olmp1.gif'); return true;"
+			   onMouseOut="changeImages('lmt', 'images/lmt.gif'); return true;">
+			     <img src="/images/lmp1.gif" width=22 height=29 border=0></a></td>
+                <td> <img name="lmt" src="/images/lmt.gif" width=109 height=29></td>
+                <td> <img src="/images/lmright.gif" width=17 height=29></td>
+                <td> <img src="/images/lmleft2.gif" width=17 height=29></td>
+                
+    <td> <a href="/alison.htm"
+			   onMouseOver="changeImages('lmt', 'images/lmt-olmp2.gif'); return true;"
+			   onMouseOut="changeImages('lmt', 'images/lmt.gif'); return true;"> 
+      </a><a href="/alison.htm"
+			   onMouseOver="changeImages('lmt', 'images/lmt-olmp2.gif'); return true;"
+			   onMouseOut="changeImages('lmt', 'images/lmt.gif'); return true;"><img src="/images/lmp3.gif" width=25 height=29 border=0></a></td>
+    <td> <a href="/commissions.htm"
+			   onMouseOver="changeImages('lmt', 'images/lmt-olmp3.gif'); return true;"
+			   onMouseOut="changeImages('lmt', 'images/lmt.gif'); return true;"> 
+      </a><a href="/commissions.htm"
+			   onMouseOver="changeImages('lmt', 'images/lmt-olmp3.gif'); return true;"
+			   onMouseOut="changeImages('lmt', 'images/lmt.gif'); return true;"><img src="/images/lmp4.gif" width=23 height=29 border=0></a></td>
+                <td> <a href="/workshops.htm"
+			   onMouseOver="changeImages('lmt', 'images/lmt-olmp4.gif'); return true;"
+			   onMouseOut="changeImages('lmt', 'images/lmt.gif'); return true;"> 
+                  <img src="/images/lmp5.gif" width=24 height=29 border=0></a></td>
+                
+    <td> <a href="/portfolio.htm"
+			   onMouseOver="changeImages('lmt', 'images/lmt-olmp5.gif'); return true;"
+			   onMouseOut="changeImages('lmt', 'images/lmt.gif'); return true;"> 
+      <img src="/images/lmp2.gif" width=21 height=29 border=0></a></td>
+                <td> <a href="/contact.htm"
+			   onMouseOver="changeImages('lmt', 'images/lmt-olmp6.gif'); return true;"
+			   onMouseOut="changeImages('lmt', 'images/lmt.gif'); return true;"> 
+                  <img src="/images/lmp6.gif" width=35 height=29 border=0></a></td>
+                <td> <img src="/images/lmright2.gif" width=16 height=29></td>
+<td><img src="/images/lmt-olmp1.gif" width=1 height=1><img src="/images/lmt-olmp2.gif" width=1 height=1><img src="/images/lmt-olmp3.gif" width=1 height=1><img src="/images/lmt-olmp4.gif" width=1 height=1><img src="/images/lmt-olmp5.gif" width=1 height=1><img src="/images/lmt-olmp6.gif" width=1 height=1></td>             
+ </tr>
+            </table>
