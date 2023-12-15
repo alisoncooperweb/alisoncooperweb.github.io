@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="robots" content="noindex, nofollow">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Righteous&display=swap" rel="stylesheet">
   <title>My FPL Links</title>
   <style>
     body {
@@ -12,10 +12,11 @@
       padding: 0;
     }
     header {
-      background-color: #333;
+      background-color: #ff4757;
       color: white;
       padding: 1em;
       text-align: center;
+      font-family: 'Righteous', cursive;
     }
     .container {
       max-width: 800px;
@@ -24,15 +25,22 @@
     }
     .link-box {
       background-color: #fff;
-      border: 1px solid #ccc;
+      border: 2px solid #70a1ff;
       padding: 1em;
       margin: 1em 0;
-      border-radius: 8px;
+      border-radius: 12px;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .link-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
     .link-box a {
-      color: #007BFF;
+      color: #2ed573;
       text-decoration: none;
+      font-weight: 500;
     }
     .link-box a:hover {
       text-decoration: underline;
@@ -40,6 +48,11 @@
     .special-number {
       font-size: 24px;
       font-weight: 700;
+      cursor: pointer;
+      color: #ffa502;
+    }
+    .special-number:hover {
+      color: #ff6348;
     }
   </style>
 </head>
@@ -50,25 +63,22 @@
   </header>
 
   <div class="container">
-    <div class="link-box">
-      <a href="https://www.livefpl.net/leagues/1935917" target="_self">LiveFPL League 1935917</a>
+    <!-- Existing link boxes -->
+    <div class="link-box special-number" onclick="copyNumber('7219441')">
+      Click to copy this number: 7219441
     </div>
-    <div class="link-box">
-      <a href="https://www.livefpl.net/leagues/659997" target="_blank">LiveFPL League 659997</a>
-    </div>
-    <div class="link-box">
-      <a href="https://www.livefpl.net/leagues/836476" target="_blank">LiveFPL League 836476</a>
-    </div>
-    <div class="link-box">
-      <a href="https://fplreview.com/free-planner/#teamProjections" target="_blank">FPL Review Free Planner</a>
-    </div>
-    <div class="link-box special-number">
-      Copy this number: 7219441
-    </div>
-    <div class="link-box">
-      <a href="https://fantasy.premierleague.com/leagues/1935917/standings/c" target="_blank">Fantasy Premier League Standings</a>
-    </div>
+    <!-- Existing link boxes -->
   </div>
+
+  <script>
+    function copyNumber(number) {
+      navigator.clipboard.writeText(number).then(() => {
+        alert('Number copied to clipboard!');
+      }).catch(err => {
+        console.error('Could not copy number: ', err);
+      });
+    }
+  </script>
 
 </body>
 </html>
