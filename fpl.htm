@@ -1,81 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <title>My FPL Links</title>
+  <title>FPL Admin Links</title>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #e5e5e5; /* Light gray background */
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background-color: #770000; /* Claret color for header */
-      color: #fff; /* White text for contrast */
-      padding: 1em;
       text-align: center;
+      padding: 1em 0;
+      background-color: #007BFF; /* Blue */
+      color: white;
+      font-size: 1.5em;
     }
     .container {
-      max-width: 800px;
-      margin: auto;
+      max-width: 600px;
+      margin: 0 auto;
       padding: 1em;
     }
     .link-box {
-      background-color: #003399; /* Blue color for link boxes */
-      border: 1px solid #770000; /* Claret border */
-      padding: 1em;
       margin: 1em 0;
+      padding: 1em;
+      background-color: white;
       border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
+      font-size: 1.1em;
     }
     .link-box a {
-      color: #ffffff; /* White text for links */
       text-decoration: none;
+      color: #007BFF; /* Blue */
     }
     .link-box a:hover {
       text-decoration: underline;
     }
     .special-number {
-      font-size: 24px;
-      font-weight: 700;
-      color: #fff; /* White text for visibility */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5em;
       cursor: pointer;
+    }
+    .special-number span {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #007BFF; /* Blue */
+    }
+    .clipboard-icon {
+      width: 20px;
+      height: 20px;
+      fill: #007BFF; /* Blue */
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>My FPL Links</h1>
+    FPL Admin Links
   </header>
 
   <div class="container">
     <div class="link-box">
-      <a href="https://www.livefpl.net/leagues/1969825" target="_self">asaidbefore (LiveFPL League 1969825)</a>
+      <a href="https://fplreview.com/massive-data-planner23/" target="_blank">
+        FPL Review Massive Data Planner
+      </a>
     </div>
     <div class="link-box">
-      <a href="https://fplreview.com/massive-data-planner23/" target="_blank">FPL Review Massive Data Planner</a>
+      <a href="https://fantasy.premierleague.com/my-team" target="_blank">
+        My FPL Team
+      </a>
     </div>
     <div class="link-box special-number" onclick="copyNumber()">
-      Copy this number: <span id="numberToCopy">5388249</span>
+      <span id="numberToCopy">5388249</span>
+      <svg class="clipboard-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M19 9h-1V6c0-1.1-.9-2-2-2h-4V2H8v2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9zm-5-1V5h4v3h-4zm5 12H4V6h4v2h6V6h4v14z"></path>
+      </svg>
     </div>
     <div class="link-box">
-      <a href="https://fantasy.premierleague.com/leagues/1969825/standings/c" target="_blank">Fantasy Premier League Standings</a>
+      <a href="https://theanalyst.com/2024/08/opta-football-predictions/" target="_blank">
+        Opta Predictions
+      </a>
     </div>
-    <div class="link-box">
-      <a href="https://theanalyst.com/2024/08/opta-football-predictions" target="_blank">Opta predictions</a>
-    </div>
-    
   </div>
 
   <script>
     function copyNumber() {
-      var number = document.getElementById('numberToCopy').innerText;
-      navigator.clipboard.writeText(number);
+      const number = document.getElementById('numberToCopy').innerText;
+      navigator.clipboard.writeText(number).then(() => {
+        alert('Number copied to clipboard!');
+      });
     }
   </script>
-
 </body>
 </html>
